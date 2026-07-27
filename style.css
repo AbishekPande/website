@@ -1,26 +1,28 @@
 *{
 
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
 
 }
 
 body{
 
+font-family:"Space Grotesk",sans-serif;
+
 background:#111;
 
-overflow-x:hidden;
-
-font-family:"Space Grotesk",sans-serif;
+overflow:hidden;
 
 color:white;
 
+height:100vh;
+
 }
 
-/* Animated background */
-
-.background{
+.gradient{
 
 position:fixed;
 
@@ -34,29 +36,29 @@ linear-gradient(
 
 -45deg,
 
-#ff595e,
+#ff0054,
 
-#ffca3a,
+#ffbd00,
 
-#8ac926,
+#00d9ff,
 
-#1982c4,
+#3a86ff,
 
-#6a4c93,
+#8338ec,
 
-#ff006e
+#06d6a0
 
 );
 
-background-size:600% 600%;
+background-size:700% 700%;
 
-animation:gradientMove 18s ease infinite;
+animation:gradient 16s infinite;
 
-z-index:-10;
+z-index:-100;
 
 }
 
-@keyframes gradientMove{
+@keyframes gradient{
 
 0%{background-position:0% 50%;}
 
@@ -68,13 +70,13 @@ z-index:-10;
 
 header{
 
-padding:50px;
-
 display:flex;
 
 justify-content:space-between;
 
 align-items:center;
+
+padding:40px 80px;
 
 }
 
@@ -82,11 +84,23 @@ header h1{
 
 font-family:"Press Start 2P";
 
-font-size:50px;
+font-size:38px;
 
-line-height:70px;
+line-height:60px;
 
-text-shadow:5px 5px #000;
+text-shadow:6px 6px rgba(0,0,0,.35);
+
+animation:titleFloat 4s infinite ease-in-out;
+
+}
+
+@keyframes titleFloat{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-8px);}
+
+100%{transform:translateY(0);}
 
 }
 
@@ -94,57 +108,33 @@ nav{
 
 display:flex;
 
-align-items:center;
-
-gap:30px;
+gap:35px;
 
 }
 
-.hamburger{
-
-font-size:34px;
-
-background:none;
-
-border:none;
+nav a{
 
 color:white;
 
-cursor:pointer;
-
-}
-
-nav ul{
-
-display:flex;
-
-gap:24px;
-
-list-style:none;
+text-decoration:none;
 
 font-weight:bold;
 
-}
-
-nav li{
-
-cursor:pointer;
+font-size:18px;
 
 transition:.3s;
 
 }
 
-nav li:hover{
+nav a:hover{
 
-transform:translateY(-5px);
+color:#ffe600;
 
-color:#fff700;
+transform:translateY(-4px);
 
 }
 
 .hero{
-
-height:70vh;
 
 display:flex;
 
@@ -156,6 +146,8 @@ align-items:center;
 
 text-align:center;
 
+height:75vh;
+
 padding:40px;
 
 }
@@ -164,13 +156,11 @@ padding:40px;
 
 font-family:"Press Start 2P";
 
-font-size:90px;
+font-size:80px;
 
 line-height:110px;
 
-margin-bottom:40px;
-
-text-shadow:8px 8px #000;
+text-shadow:8px 8px rgba(0,0,0,.3);
 
 animation:bounce 2s infinite;
 
@@ -178,45 +168,75 @@ animation:bounce 2s infinite;
 
 .hero p{
 
-max-width:850px;
+margin-top:40px;
 
-font-size:24px;
+font-size:26px;
 
-font-weight:600;
+max-width:900px;
 
-line-height:40px;
+line-height:45px;
+
+font-weight:500;
 
 }
 
-.shape{
+button{
+
+margin-top:60px;
+
+padding:20px 45px;
+
+font-size:20px;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:white;
+
+color:#111;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+.circle{
 
 position:fixed;
 
-opacity:.20;
+border-radius:50%;
 
-border-radius:25px;
+opacity:.18;
 
-animation:float 14s infinite alternate ease-in-out;
+animation:float 12s infinite alternate;
 
 }
 
-.one{
+.circle.one{
 
-width:220px;
+width:260px;
 
-height:220px;
+height:260px;
 
 background:#00f5d4;
 
-top:10%;
+left:-60px;
 
-left:8%;
-
-transform:rotate(30deg);
+top:150px;
 
 }
 
-.two{
+.circle.two{
 
 width:170px;
 
@@ -224,43 +244,71 @@ height:170px;
 
 background:#ffbe0b;
 
-bottom:10%;
+right:80px;
 
-left:15%;
-
-border-radius:50%;
+bottom:70px;
 
 }
 
-.three{
+.square{
 
-width:260px;
+position:fixed;
 
-height:260px;
+width:220px;
+
+height:220px;
 
 background:#fb5607;
 
-right:12%;
+opacity:.18;
 
-top:20%;
+right:120px;
 
-clip-path:polygon(50% 0%,100% 50%,50% 100%,0 50%);
+top:120px;
+
+transform:rotate(35deg);
+
+animation:spin 18s linear infinite;
 
 }
 
-.four{
+.triangle{
 
-width:200px;
+position:fixed;
 
-height:200px;
+width:0;
 
-background:#8338ec;
+height:0;
 
-right:5%;
+border-left:120px solid transparent;
 
-bottom:10%;
+border-right:120px solid transparent;
 
-transform:rotate(40deg);
+border-bottom:220px solid #8338ec;
+
+opacity:.15;
+
+left:100px;
+
+bottom:-40px;
+
+animation:float 9s infinite alternate;
+
+}
+
+@keyframes spin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
 
 }
 
@@ -268,13 +316,13 @@ transform:rotate(40deg);
 
 from{
 
-transform:translateY(0px) rotate(0deg);
+transform:translateY(0);
 
 }
 
 to{
 
-transform:translateY(-70px) rotate(25deg);
+transform:translateY(-60px);
 
 }
 
@@ -290,7 +338,7 @@ transform:translateY(0);
 
 50%{
 
-transform:translateY(-20px);
+transform:translateY(-18px);
 
 }
 

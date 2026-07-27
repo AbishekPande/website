@@ -349,28 +349,15 @@ scroll-behavior:smooth;
 
 }
 
-.enter-button{
+.enter-button:hover{
 
-margin-top:60px;
+transform:translateY(-6px) scale(1.08);
 
-padding:20px 45px;
+background:#ffe600;
 
-background:white;
-
-color:#111;
-
-border-radius:40px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-transition:.35s;
-
-display:inline-block;
+box-shadow:14px 14px rgba(0,0,0,.30);
 
 }
-
 .enter-button:hover{
 
 transform:scale(1.08);

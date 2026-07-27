@@ -4,253 +4,584 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>WANDERVERSE</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>WANDERVERSE | Explore. Wonder. Live.</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="WANDERVERSE is a peaceful place to explore inspiring quotes, breathtaking places, the beauty of nature, and the wonder of the universe.">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords"
+          content="quotes, inspiration, nature, travel, universe, stars, wonder, exploration">
+
+    <meta name="theme-color"
+          content="#071321">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
 <body>
 
-    <!-- Animated Background -->
-    <canvas id="backgroundCanvas"></canvas>
+    <!-- ===================================== -->
+    <!-- LOADER -->
+    <!-- ===================================== -->
 
-    <!-- ========================= -->
-    <!-- Navigation -->
-    <!-- ========================= -->
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <span>WANDERVERSE</span>
+
+            <small>Explore • Wonder • Live</small>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- BACKGROUND -->
+    <!-- ===================================== -->
+
+    <div class="stars"></div>
+
+    <div class="gradient-bg"></div>
+
+    <div class="noise"></div>
+
+    <!-- ===================================== -->
+    <!-- HEADER -->
+    <!-- ===================================== -->
 
     <header>
 
-        <nav>
+        <div class="container">
 
-            <a href="#home">HOME</a>
-
-            <a href="#publications">PUBLICATIONS</a>
-
-            <a href="#gallery">GALLERY</a>
-
-            <a href="#wanderland">WANDER LAND</a>
-
-        </nav>
-
-    </header>
-
-    <!-- ========================= -->
-    <!-- HERO -->
-    <!-- ========================= -->
-
-    <section id="hero" class="hero">
-
-        <div class="floatingWords">
-
-            <span>WANDER</span>
-            <span>DISCOVER</span>
-            <span>CREATE</span>
-            <span>LOVE</span>
-            <span>SMILE</span>
-            <span>BOOKS</span>
-            <span>TRAVEL</span>
-            <span>STORIES</span>
-            <span>UNIVERSE</span>
-            <span>TODAY</span>
-            <span>CURIOUS</span>
-            <span>EXPLORE</span>
-
-        </div>
-
-        <div class="heroContent">
-
-            <h2>
+            <a href="#hero"
+               class="logo">
 
                 WANDERVERSE
 
-            </h2>
+            </a>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="#philosophy">Philosophy</a></li>
+
+                    <li><a href="#quotes">Quotes</a></li>
+
+                    <li><a href="#explore">Explore</a></li>
+
+                    <li><a href="#gallery">Gallery</a></li>
+
+                    <li><a href="#stories">Stories</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button id="themeToggle">
+
+                ☾
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ===================================== -->
+    <!-- HERO -->
+    <!-- ===================================== -->
+
+    <section id="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <p class="eyebrow">
+
+                THE JOURNEY BEGINS HERE
+
+            </p>
 
             <h1>
 
-                ENTER THE VERSE
+                Explore.<br>
+                Wonder.<br>
+                Live.
 
             </h1>
 
-            <p>
+            <p class="hero-description">
 
-                As colorful, vast, and boundless as the universe itself,
-                wander into an ever-expanding world of stories,
-                moments, books, photographs, ideas,
-                and everything beautifully unfinished.
+                Somewhere between mountains, oceans,
+                galaxies and quiet mornings,
+                we rediscover who we really are.
 
-            </p>
-
-            <a href="#home" class="enterButton">
-
-                ENTER
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- ========================= -->
-    <!-- HOME -->
-    <!-- ========================= -->
-
-    <section id="home" class="page">
-
-        <div class="sectionContent">
-
-            <h2>
-
-                Welcome
-
-            </h2>
-
-            <p>
-
-                The universe is wonderfully vast, endlessly colorful, and full of stories waiting to be discovered. We are each a small part of it, yet every life carries its own constellation of moments, dreams, memories, and possibilities.
+                WANDERVERSE is a home for curious souls—
+                filled with beautiful thoughts,
+                breathtaking places,
+                timeless wisdom,
+                and the endless wonder of life.
 
             </p>
 
-            <p>
+            <div class="hero-buttons">
 
-                This little corner of the universe is a collection of things worth pausing for—thoughts that linger, books that inspire, photographs that capture wonder, stories that stay with you, ideas that spark curiosity, and quotes that quietly find their way into your heart.
+                <a href="#explore"
+                   class="btn primary">
 
-            </p>
+                    Begin Exploring
 
-            <p>
+                </a>
 
-                There's no rush here. Just room to wander, smile, wonder, and appreciate the beauty tucked into everyday moments. Because sometimes the most meaningful journeys begin simply by looking a little closer.
+                <a href="#philosophy"
+                   class="btn secondary">
 
-            </p>
+                    Our Philosophy
 
-            <p class="closing">
-
-                Take your time.
-
-                Wander freely.
-
-                You never know what you'll discover next.
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- ========================= -->
-    <!-- PUBLICATIONS -->
-    <!-- ========================= -->
-
-    <section id="publications" class="page">
-
-        <div class="sectionContent">
-
-            <h2>
-
-                Publications
-
-            </h2>
-
-            <div class="comingIcon">
-
-                📚
+                </a>
 
             </div>
 
-            <p>
+        </div>
 
-                Books, essays, reflections and ideas.
+        <div class="scroll-indicator">
 
-            </p>
-
-            <h3>
-
-                COMING SOON
-
-            </h3>
+            Scroll
 
         </div>
 
     </section>
 
-    <!-- ========================= -->
+    <!-- ===================================== -->
+    <!-- PHILOSOPHY -->
+    <!-- ===================================== -->
+
+    <section id="philosophy">
+
+        <div class="container narrow">
+
+            <span class="section-tag">
+
+                OUR PHILOSOPHY
+
+            </span>
+
+            <h2>
+
+                There is beauty everywhere,
+                if we simply choose to notice it.
+
+            </h2>
+
+            <p>
+
+                Life doesn't always need to be rushed.
+                Sometimes the greatest adventures begin
+                with slowing down long enough
+                to appreciate the sky above,
+                the laughter around us,
+                the mountains waiting in the distance,
+                or the quiet joy hidden in ordinary moments.
+
+            </p>
+
+            <p>
+
+                WANDERVERSE isn't about escaping life.
+
+                It's about embracing it.
+
+                With curiosity.
+
+                Gratitude.
+
+                Hope.
+
+                And the courage to keep exploring,
+                wherever your journey leads.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FEATURED QUOTE -->
+    <!-- ===================================== -->
+
+    <section id="featured-quote">
+
+        <div class="container">
+
+            <blockquote>
+
+                "The universe is vast,
+                but sometimes
+                the greatest discovery
+                is simply learning
+                to appreciate today."
+
+            </blockquote>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- QUOTES -->
+    <!-- ===================================== -->
+
+    <section id="quotes">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>
+
+                    DAILY INSPIRATION
+
+                </span>
+
+                <h2>
+
+                    Words that stay with you.
+
+                </h2>
+
+            </div>
+
+            <div class="quote-grid">
+
+                <article class="quote-card">
+
+                    <h3>Live Lightly</h3>
+
+                    <p>
+
+                        Happiness often arrives
+                        quietly,
+                        while we're busy appreciating life.
+
+                    </p>
+
+                </article>
+
+                <article class="quote-card">
+
+                    <h3>Keep Exploring</h3>
+
+                    <p>
+
+                        Every road,
+                        every conversation,
+                        every sunrise
+                        has something to teach us.
+
+                    </p>
+
+                </article>
+
+                <article class="quote-card">
+
+                    <h3>Look Up</h3>
+
+                    <p>
+
+                        The stars remind us
+                        how beautifully small
+                        our worries really are.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- EXPLORE -->
+    <!-- ===================================== -->
+
+    <section id="explore">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>
+
+                    EXPLORE
+
+                </span>
+
+                <h2>
+
+                    Every path leads somewhere beautiful.
+
+                </h2>
+
+            </div>
+
+            <div class="explore-grid">
+
+                <div class="explore-card">
+
+                    <h3>Nature</h3>
+
+                </div>
+
+                <div class="explore-card">
+
+                    <h3>Travel</h3>
+
+                </div>
+
+                <div class="explore-card">
+
+                    <h3>Universe</h3>
+
+                </div>
+
+                <div class="explore-card">
+
+                    <h3>Mountains</h3>
+
+                </div>
+
+                <div class="explore-card">
+
+                    <h3>Oceans</h3>
+
+                </div>
+
+                <div class="explore-card">
+
+                    <h3>Life</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
     <!-- GALLERY -->
-    <!-- ========================= -->
+    <!-- ===================================== -->
 
-    <section id="gallery" class="page">
+    <section id="gallery">
 
-        <div class="sectionContent">
+        <div class="container">
 
-            <h2>
+            <div class="section-heading">
 
-                Gallery
+                <span>
 
-            </h2>
+                    GALLERY
 
-            <div class="comingIcon">
+                </span>
 
-                📷
+                <h2>
+
+                    Beauty worth pausing for.
+
+                </h2>
 
             </div>
 
-            <p>
+            <div class="gallery-grid">
 
-                Places, photographs, colors and unforgettable moments.
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
 
-            </p>
-
-            <h3>
-
-                COMING SOON
-
-            </h3>
+            </div>
 
         </div>
 
     </section>
 
-    <!-- ========================= -->
-    <!-- WANDER LAND -->
-    <!-- ========================= -->
+    <!-- ===================================== -->
+    <!-- STORIES -->
+    <!-- ===================================== -->
 
-    <section id="wanderland" class="page">
+    <section id="stories">
 
-        <div class="sectionContent">
+        <div class="container">
 
-            <h2>
+            <div class="section-heading">
 
-                Wander Land
+                <span>
 
-            </h2>
+                    STORIES
 
-            <div class="comingIcon">
+                </span>
 
-                ✨
+                <h2>
+
+                    Journeys worth remembering.
+
+                </h2>
 
             </div>
 
-            <p>
+            <div class="story-grid">
 
-                Quotes, discoveries, beautiful curiosities and little surprises.
+                <article class="story-card"></article>
 
-            </p>
+                <article class="story-card"></article>
 
-            <h3>
+                <article class="story-card"></article>
 
-                COMING SOON
-
-            </h3>
+            </div>
 
         </div>
 
     </section>
+
+    <!-- ===================================== -->
+    <!-- NEWSLETTER -->
+    <!-- ===================================== -->
+
+    <section id="newsletter">
+
+        <div class="container narrow">
+
+            <h2>
+
+                Receive a little wonder,
+                once in a while.
+
+            </h2>
+
+            <p>
+
+                Beautiful quotes.
+                Inspiring places.
+                Quiet reflections.
+                No noise.
+
+            </p>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Your email">
+
+                <button>
+
+                    Join
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- CONTACT -->
+    <!-- ===================================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2>
+
+                Thank you for visiting.
+
+            </h2>
+
+            <p>
+
+                Wherever you are in the world,
+                may your journey always lead
+                toward curiosity,
+                kindness,
+                and wonder.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>
+
+                WANDERVERSE
+
+            </h3>
+
+            <p>
+
+                Explore.
+                Wonder.
+                Live.
+
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#">Instagram</a>
+
+                <a href="#">Pinterest</a>
+
+                <a href="#">YouTube</a>
+
+            </div>
+
+            <small>
+
+                © 2026 WANDERVERSE.
+                Crafted with curiosity.
+
+            </small>
+
+        </div>
+
+    </footer>
 
     <script src="script.js"></script>
 

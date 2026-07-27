@@ -316,49 +316,21 @@ nav{
 
 nav a{
 
-    color:white;
+font-family:"Silkscreen", cursive;
 
-    text-decoration:none;
+font-size:18px;
 
-    font-weight:700;
+color:white;
 
-    font-size:18px;
+text-decoration:none;
 
-    transition:.3s;
+letter-spacing:2px;
 
-    position:relative;
+transition:.3s;
 
-}
+position:relative;
 
-nav a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-6px;
-
-    width:0;
-
-    height:3px;
-
-    background:#ffe66d;
-
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    transform:translateY(-4px);
-
-}
-
-nav a:hover::after{
-
-    width:100%;
+text-transform:uppercase;
 
 }
 
@@ -366,21 +338,21 @@ nav a:hover::after{
    HERO
 =========================== */
 
-.hero{
+.hero p{
 
-    min-height:85vh;
+margin-top:45px;
 
-    display:flex;
+max-width:1000px;
 
-    flex-direction:column;
+font-family:"Silkscreen", cursive;
 
-    justify-content:center;
+font-size:21px;
 
-    align-items:center;
+line-height:40px;
 
-    text-align:center;
+color:white;
 
-    padding:40px;
+text-shadow:3px 3px rgba(0,0,0,.18);
 
 }
 
@@ -481,20 +453,37 @@ nav a:hover::after{
 /* ===========================
    ANIMATIONS
 =========================== */
+@keyframes gradientShift{
 
-@keyframes bounce{
+0%{
 
-    0%,100%{
+background-position:0% 50%;
 
-        transform:translateY(0);
+}
 
-    }
+25%{
 
-    50%{
+background-position:100% 30%;
 
-        transform:translateY(-12px);
+}
 
-    }
+50%{
+
+background-position:100% 100%;
+
+}
+
+75%{
+
+background-position:0% 70%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
 
 }
 

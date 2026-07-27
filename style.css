@@ -15,12 +15,12 @@ html{
 body{
 
     font-family:"Space Grotesk",sans-serif;
-
-    background:#07111f;
-
+    overflow-x:hidden;
     color:white;
 
-    overflow-x:hidden;
+    background:black;
+
+    text-shadow:0 0 8px rgba(255,255,255,.15);
 
 }
 
